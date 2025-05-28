@@ -74,8 +74,8 @@ FTT/
 
 👉 You can download the datasets and pretrained models from the following links:
 
-- [📥 Dataset Download Link](#) *(insert actual link)*
-- [📥 Pretrained Models](#) *(insert actual link)*
+- [📥 Dataset Download Link](#) (https://drive.google.com/file/d/1FGTD6V88n8EVXVlypLFTCiSPAUOwuPYu/view?usp=drive_link)
+- [📥 Pretrained Models](#) (https://drive.google.com/file/d/1Iuf34KVLPqqYf5DBq_epPM1kSpFIGKog/view?usp=drive_link)
 
 ---
 
