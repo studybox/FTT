@@ -1,0 +1,62 @@
+import numpy as np
+import os
+
+
+preset_config = {}
+# preset_config["mode"] = args.mode 
+# preset_config["dataset"] = args.dataset 
+# preset_config["preset_config_name"] = args.preset_config_name 
+preset_config["num_edge_types"] = 3
+preset_config["h_dim"] = 128 
+preset_config["num_joint_modes"] = 6
+preset_config["num_proposals"] = 15
+preset_config["max_epochs"] = 50
+# preset_config["log_path"] = Path('./logs') / preset_config["preset_config_name"]
+preset_config["lr"] = 1e-3
+preset_config["decoder"] = 'dagnn'
+preset_config["num_heads"] = 1
+preset_config["learned_relation_header"] = False
+preset_config["n_mapnet_layers"] = 2
+preset_config["n_l2a_layers"] = 2
+preset_config["n_a2a_layers"] = 2
+preset_config["resume_training"] = False
+preset_config["proposal_coef"] = 1
+preset_config["rel_coef"] = 100
+preset_config["proposal_header"] = True
+preset_config["two_stage_training"] = False
+preset_config["training_stage"] = 2
+preset_config["ig"] = 'sparse'
+preset_config["focal_loss"] = False
+preset_config["gamma"] = 5
+preset_config["weight_0"] = 1
+preset_config["weight_1"] = 2
+preset_config["weight_2"] = 4
+preset_config["teacher_forcing"] = True
+preset_config["scheduled_sampling"] = False 
+preset_config["eval_training"] = False
+preset_config["supervise_vehicles"] = True
+preset_config["no_agenttype_encoder"] = True 
+preset_config["train_all"] = False
+# preset_config["scene_idxs_to_viz"] = args.scene_idxs_to_viz
+preset_config["switch_lr_1"] = 40
+preset_config["switch_lr_2"] = 48
+preset_config["lr_step"] = 1/5
+preset_config["input_size"] = 5
+preset_config["prediction_steps"] = 15 
+preset_config["observation_steps"] = 10
+# two agent types: "car", and "pedestrian/bicyclist"
+preset_config["num_agenttypes"] = 2
+# preset_config['dataset_path'] = 'dataset_INTERACTION'
+# preset_config['tracks_train_reformatted'] = os.path.join(preset_config['dataset_path'], 'train_reformatted')
+# preset_config['tracks_val_reformatted'] = os.path.join(preset_config['dataset_path'], 'val_reformatted')
+preset_config['num_scales'] = 4
+preset_config["map2actor_dist"] = 20.0
+preset_config["actor2actor_dist"] = 100.0
+# preset_config['maps'] = os.path.join(preset_config['dataset_path'], 'maps')
+preset_config['cross_dist'] = 10
+preset_config['cross_angle'] = 1 * np.pi
+preset_config["preprocess"] = True
+preset_config["val_workers"] = 0
+preset_config["workers"] = 0
+# config["preprocess_val"] = os.path.join(config['dataset_path'], 'preprocess', 'val_interaction')
+preset_config['batch_size'] = 32
