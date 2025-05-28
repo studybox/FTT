@@ -5,7 +5,7 @@ This is the official code repository for the paper:
 **Multi-modal Trajectory Prediction With Frenet Trajectory Translation**  
 *Boqi Li, Shaobing Xu, Huei Peng*
 
-This work introduces a novel approach to multi-modal vehicle trajectory prediction by translating predicted trajectories into the Frenet coordinate space. It leverages both learned intent and map structure to improve prediction accuracy and reduce collision rates.
+This work introduces a novel approach to multi-modal vehicle trajectory prediction by translating predicted trajectories into the Frenet coordinate space. It leverages both learned routing intent and map structure to improve prediction accuracy.
 
 ---
 
@@ -49,7 +49,7 @@ pip install dgl-cu113 -f https://data.dgl.ai/wheels/repo.html
 ---
 
 ## Directory structure:
-
+```
 FTT/
 ├── data/
 │   ├── rounD/
@@ -64,7 +64,7 @@ FTT/
 ├── config.py
 ├── train.py
 └── val.py
-
+```
 ---
 
 ## 📂 Dataset and Pretrained Models
